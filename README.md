@@ -1,34 +1,25 @@
-# موقع السعدني | Elsadany
+# Elsadany Website | Elsadany
 
-موقع شخصي ثابت (HTML وCSS وJavaScript) بلا خطوات بناء، جاهز للنشر على GitHub Pages أو نطاقك الخاص.
+A static personal portfolio website (HTML, CSS, and JavaScript) with zero build steps, ready to deploy on GitHub Pages or your own custom domain.
 
-## الملفات
-- `index.html` المحتوى (عربي مصري افتراضيًا، وزرار للتبديل للإنجليزي).
-- `assets/style.css` الأنماط، والوضع الفاتح والداكن. اللون الأساسي `#2384AF` (rgb 35,132,175).
-- `assets/app.js` الحركة والمخططات وإحصاءات GitHub الحيّة. **الإعدادات في أعلى الملف.**
-- `assets/photo.jpg` صورتك. `assets/img/` لقطات اللوحات والمشاريع (WebP).
+## Files
 
-## الجديد في النسخة 2
-- ألوان من نفس لوحتك (أزرق، كهرماني، بنفسجي، وردي) + فيروزي أخضر، لكل قسم وبطاقة لونها.
-- حركات: خلفيات متحركة، عنوان بتدرّج لوني، شريط أدوات متحرك، إمالة وإضاءة للبطاقات مع المؤشر، شبكة عُقَد ملوّنة تتفاعل مع الماوس، زرار رجوع للأعلى. كلها بتتوقف تلقائيًا لمن يفعّل "تقليل الحركة".
-- زرار الإيميل: على الكمبيوتر يفتح كتابة Gmail مباشرة، وعلى الموبايل يفتح تطبيق البريد، وجنبه زرار نسخ الإيميل وزرار فتح تطبيق البريد.
+* `index.html` Content (Egyptian Arabic by default, with a toggle button to switch to English).
+* `assets/style.css` Styles, plus light and dark modes. Primary color `#2384AF` (rgb 35, 132, 175).
+* `assets/app.js` Animations, charts, and live GitHub stats. **Configuration settings are at the top of the file.**
+* `assets/photo.jpg` Your profile photo. `assets/img/` Dashboard and project screenshots (WebP).
 
-## الإعدادات (أعلى `assets/app.js`)
-- `CONFIG`: روابط LinkedIn وInstagram وGitHub والإيميل والسيرة الذاتية. **`facebook`** فاضي دلوقتي: حط الرابط فيه وهيظهر الزرار تلقائيًا.
-- `SKILLS`: مستويات المخطط الراداري تقديرية. عدّلها لتعكس مستواك.
+## What's New in Version 2
 
-## إضافة مشروع جديد
-انسخ أي `<article class="card">` في `index.html`، غيّر النص والرابط، وحط الصورة في `assets/img/`. الأقسام `data-cat` بتحدد الفلتر: `dash` أو `ml` أو `app`.
+* Colors pulled from your palette (blue, amber, purple, pink) + teal green, giving each section and card its own distinct accent.
+* Animations: animated backgrounds, a gradient title, a marquee ticker, card tilt and hover lighting effects, an interactive colorful node network that reacts to the mouse, and a back-to-top button. All animations automatically pause for users with "Reduce Motion" enabled.
+* Email button: opens a Gmail compose window directly on desktop and the default mail app on mobile, paired with quick buttons to copy the email address or open the mail app.
 
-## النشر على GitHub Pages
-1. أنشئ مستودعًا عامًّا باسم **`MohamedElsadany56.github.io`**.
-2. ارفع كل محتويات المجلد على فرع `main`.
-3. من **Settings ← Pages** اختر: Deploy from a branch، الفرع `main` و `/ (root)`.
-4. بعد دقايق الموقع يظهر على `https://mohamedelsadany56.github.io`.
+## Configuration (Top of `assets/app.js`)
 
-مستودع `MohamedElsadany56/MohamedElsadany56` هو README بروفايلك على GitHub، فسيبه كده وحط الموقع في مستودع منفصل.
+* `CONFIG`: Links for LinkedIn, Instagram, GitHub, email, and your CV. **`facebook`** is currently empty: just paste the link there and the button will appear automatically.
+* `SKILLS`: Radar chart levels are placeholders/estimates. Adjust them to reflect your actual skill levels.
 
-## نطاق خاص
-1. أنشئ ملف `CNAME` في جذر المستودع وفيه النطاق بس، مثل `elsadany.dev`.
-2. عند مزوّد النطاق أضف: أربعة سجلات `A` للنطاق الجذري إلى `185.199.108.153` و`185.199.109.153` و`185.199.110.153` و`185.199.111.153`، وسجل `CNAME` للنطاق `www` إلى `mohamedelsadany56.github.io`.
-3. من **Settings ← Pages** فعّل Enforce HTTPS بعد اعتماد الشهادة.
+## Adding a New Project
+
+Copy any `<article class="card">` block in `index.html`, update the text and link, and drop the screenshot into `assets/img/`. The `data-cat` attribute sets the filter category: `dash`, `ml`, or `app`.
